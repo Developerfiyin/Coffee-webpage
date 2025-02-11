@@ -110,3 +110,79 @@ header .navbar {
   color: var(--white-color);
   align-items: center;
 }
+.hero-section .hero-details .title {
+  font-size: var(--font-size-xxl);
+  color: var(--secondary-color);
+  font-family: cursive;
+}
+
+.hero-section .hero-details .subtitle {
+  margin-top: 8px;
+  font-size: var(--font-size-xxl);
+  max-width: 70%;
+  font-weight: var(--font-weight-semi-bold);
+}
+.hero-section .hero-details .description {
+  max-width: 70%;
+  margin: 24px 0 24px;
+  font-size: var(--font-size-m);
+}
+
+.hero-section .hero-details .buttons {
+  gap: 23px;
+  display: flex;
+}
+.hero-section .hero-details .button {
+  padding: 10px 26px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-m);
+  font-weight: var(--font-weight-medium);
+  border: 2px solid transparent;
+}
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us {
+  color: var(--white-color);
+  border-color: var(--white-color);
+  background: transparent;
+}
+
+.hero-section .hero-details .contact-us:hover {
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+  background: var(--secondary-color);
+}
+
+.hero-section .hero-image-wrapper {
+  margin-right: 30px;
+  max-width: 500px;
+}
+/* Responsive media query for max width 900px*/
+
+@media screen and (max-width: 900px) {
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+  }
+  .navbar .nav-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+    background: var(--white-color);
+  }
+  .navbar .nav-menu .nav-link {
+    color: var(--dark-color);
+    display: block;
+    margin-top: 17px;
+    font-size: var(--font-size-l);
+  }
+}
