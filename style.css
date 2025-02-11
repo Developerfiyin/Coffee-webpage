@@ -67,6 +67,9 @@ img {
 
 header {
   background: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 header .navbar {
   display: flex;
@@ -95,4 +98,15 @@ header .navbar {
 .navbar .nav-menu .nav-link:hover {
   color: var(--primary-color);
   background: var(--secondary-color);
+}
+.hero-section {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
+.hero-section .section-content {
+  justify-content: space-between;
+  display: flex;
+  min-height: 100vh;
+  color: var(--white-color);
+  align-items: center;
 }
