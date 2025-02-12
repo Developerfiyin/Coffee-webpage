@@ -193,10 +193,10 @@
       <!------------Testimonals section-->
       <section class="testimonials-section">
         <h2 class="section-title">
-          <div class="section-content">
-            <div class="slider-wrapper">
-              <ul class="testimonials-list">
-                <li class="testimonial">
+          <div class="section-content swiper">
+            <div class="slider-wrapper slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
                   <img src="user-1.jpg" alt="user-1" class="user-image" />
                   <h3 class="name">Sarah Johnson</h3>
                   <i class="feedback">
@@ -204,7 +204,7 @@
                     order again!"</i
                   >
                 </li>
-                <li class="testimonial">
+                <li class="testimonial swiper-slide">
                   <img src="user-2.jpg" alt="user-2" class="user-image" />
                   <h3 class="name">James Wilson</h3>
                   <i class="feedback">
@@ -212,7 +212,7 @@
                     shipping too!"</i
                   >
                 </li>
-                <li class="testimonial">
+                <li class="testimonial swiper-slide">
                   <img src="user-3.jpg" alt="user-3" class="user-image" />
                   <h3 class="name">Micheal Brown</h3>
                   <i class="feedback">
@@ -220,7 +220,7 @@
                     delivery.Quick shipping too."</i
                   >
                 </li>
-                <li class="testimonial">
+                <li class="testimonial swiper-slide">
                   <img src="user-4.jpg" alt="user-4" class="user-image" />
                   <h3 class="name">Emily Harris</h3>
                   <i class="feedback">
@@ -228,7 +228,7 @@
                     recommend."</i
                   >
                 </li>
-                <li class="testimonial">
+                <li class="testimonial swiper-slide">
                   <img src="user-5.jpg" alt="user-5" class="user-image" />
                   <h3 class="name">Anthony Thompson</h3>
                   <i class="feedback">
@@ -237,11 +237,18 @@
                   >
                 </li>
               </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </h2>
       </section>
     </main>
+    <!-------LINKING Swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--------Linking custom script -->
+
     <script src="script.js"></script>
   </body>
 </html>
