@@ -65,7 +65,7 @@ img {
 .section-title {
   text-align: center;
   padding: 60px 0 100px;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-);
   text-transform: uppercase;
 }
 
@@ -221,8 +221,53 @@ header .navbar {
 .about-section .social-link-list .social-link:hover {
   color: var(--secondary-color);
 }
-/* Responsive media query for max width 900px*/
+/* Menu section styling */
+.menu-section {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 50px 0 100px;
+}
+.menu-section .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+}
+.menu-section .menu-list .menu-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% / 3 - 110px);
+  margin-bottom: 15px;
+  object-fit: contain;
+}
 
+.menu-section .menu-list .menu-item .menu-image {
+  max-width: 83%;
+  aspect-ratio: 1;
+}
+
+.menu-section .menu-list .menu-item .name {
+  margin: 12px 0;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.menu-section .menu-list .menu-item .text {
+  font-size: var(--font-size-m);
+}
+/* Responsive media query for max width 1024px*/
+@media screen and (max-width: 1024px) {
+  .menu-section .menu-list {
+    gap: 60px;
+  }
+  .menu-section .menu-list .menu-item {
+    width: calc(100% / 3 - 60px);
+  }
+}
+/* Responsive media query for max width 900px*/
 @media screen and (max-width: 900px) {
   :root {
     --font-size-m: 1rem;
