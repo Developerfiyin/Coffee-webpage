@@ -62,7 +62,22 @@ img {
   padding: 0 20px;
   max-width: var(--site-max-width);
 }
+.section-title {
+  text-align: left;
+  padding: 60px 0 100px;
+  font-size: var(--font-size-l);
+  text-transform: uppercase;
+}
 
+.section-title::after {
+  content: "";
+  width: 80px;
+  display: block;
+  margin: 10px auto 0;
+  height: 5px;
+  border-radius: var(--border-radius-s);
+  background: var(--secondary-color);
+}
 /* Navbar stylng */
 
 header {
