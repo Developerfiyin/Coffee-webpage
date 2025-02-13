@@ -306,6 +306,26 @@ header .navbar {
 .testimonials-section .swiper-slide-button:hover {
   color: var(--primary-color);
 }
+/* Created gallery section */
+
+.gallery-section {
+  padding: 50px 0 100px;
+}
+.gallery-section .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.gallery-section .gallery-item .gallery-image {
+  cursor: zoom-in;
+  height: 100%;
+  width: 100%;
+}
+.gallery-section .gallery-list .gallery-item {
+  border-radius: var(--border-radius-circle);
+  width: calc(100% / 3 - 32px);
+  overflow: hidden;
+}
 /* Responsive media query for max width 1024px*/
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
