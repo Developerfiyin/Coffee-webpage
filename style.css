@@ -317,6 +317,7 @@ header .navbar {
   gap: 32px;
 }
 .gallery-section .gallery-item .gallery-image {
+  transition: 0.3s ease;
   cursor: zoom-in;
   height: 100%;
   width: 100%;
