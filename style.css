@@ -398,7 +398,38 @@ header .navbar {
   color: var(--primary-color);
   background: transparent;
 }
+/* Footer section styling */
+.footer-section {
+  background: var(--dark-color);
+  padding: 20px 0;
+}
+.footer-section.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.footer-section .social-link-list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+  font-size: var(--font-size-l);
+}
+
+.footer-section .social-link-list .social-link {
+  color: var(--secondary-color);
+}
+
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+  color: var(--secondary-color);
+}
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+  color: var(--white-color);
+  transition: 0.2s ease;
+}
 /* Responsive media query for max width 1024px*/
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
