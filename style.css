@@ -333,6 +333,53 @@ header .navbar {
   transform: scale(1.3);
 }
 
+/*Contact us section styling */
+.Contact-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+.Contact-section .section-content {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.Contact-section .contact-info-list .contact-info {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  align-items: center;
+}
+.Contact-section .contact-form .form-input {
+  font-size: var(--font-size-m);
+}
+.Contact-section .contact-form .form-input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 0 12px;
+  margin-bottom: 16px;
+  background: var(--white-color);
+  border-radius: var(--border-radius-s);
+  border: 1px solid var(--medium-gray-color);
+}
+.Contact-section .contact-form textarea.form-input {
+  height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.Contact-section .contact-form .form-input:focus {
+  border-color: var(--secondary-color);
+}
+.Contact-section .contact-form .sumbit-button {
+  padding: 10px 26px;
+  color: var(--white-color);
+  font-weight: var(--medium-gray-color);
+  background: var(--primary-color);
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-m);
+}
 /* Responsive media query for max width 1024px*/
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
