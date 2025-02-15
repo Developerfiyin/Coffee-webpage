@@ -265,13 +265,13 @@ header .navbar {
 }
 
 .testimonials-section .slider-wrapper {
-  margin-top: -50px;
   overflow: hidden;
   margin: 0 60px 50px;
 }
 .testimonials-section .testimonial {
   display: flex;
   padding: 35px;
+  user-select: none;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -282,7 +282,6 @@ header .navbar {
   height: 180px;
   object-fit: cover;
   margin-bottom: 50px;
-
   border-radius: var(--border-radius-circle);
 }
 .testimonials-section .testimonial .name {
@@ -571,5 +570,9 @@ header .navbar {
 
   .testimonials-section .swiper-slide-button {
     display: none;
+  }
+  .footer-section .section-content {
+    gap: 20px;
+    flex-direction: column;
   }
 }
