@@ -426,6 +426,12 @@ header .navbar {
 .footer-section .policy-text .policy-link:hover {
   color: var(--secondary-color);
 }
+
+.footer-section .policy-text .separator {
+  margin: 0 5px;
+  color: var(--white-color);
+}
+
 .footer-section :where(.copyright-text, .social-link, .policy-link) {
   color: var(--white-color);
   transition: 0.2s ease;
